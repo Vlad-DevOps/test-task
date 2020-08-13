@@ -1,2 +1,2 @@
 # test-task
-nginx php
+docker-compose up
