@@ -1,0 +1,17 @@
+version: '3'
+services:
+  web:
+    image: nginx:latest
+    ports:
+      - "8888:80"
+    volumes:
+      - $PWD:/var/log/nginx/
+      - $PWD:/etc/nginx/conf.d
+   
+
+  php:
+    image: php:7.2-apache
+    volumes:
+      - $PWD:/var/www/html
+    
+    
